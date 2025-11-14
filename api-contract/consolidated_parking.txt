@@ -1,0 +1,32 @@
+Request:
+GET
+http://localhost:8080/api/v1/parking-lots
+
+
+Response:
+[
+  {
+    "parking_lot_id": 1,
+    "parking_lot_name": "mcity",
+    "capacity": 520,
+    "occupied": 387,
+    "available": 133,
+    "occupancy_rate": 74.4
+  },
+  {
+    "parking_lot_id": 2,
+    "parking_lot_name": "shols",
+    "capacity": 480,
+    "occupied": 342,
+    "available": 138,
+    "occupancy_rate": 71.3
+  },
+  {
+    "parking_lot_id": 3,
+    "parking_lot_name": "pacifica",
+    "capacity": 450,
+    "occupied": 298,
+    "available": 152,
+    "occupancy_rate": 66.2
+  }
+]

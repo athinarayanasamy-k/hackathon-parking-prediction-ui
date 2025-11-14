@@ -1,0 +1,43 @@
+Validation Rules:
+
+reserved_from < reserved_to
+
+For today's reservation, Slot must not be occupied (is_occupied_now = false in parking_slot_status)
+For future reservation, is_occupied_now should not be required
+Slot must now have an active reservation overlapping the requested timeframe
+Status will be set to active by default
+
+-----------------------------------------------------------------------------------------------
+Request:
+POST /api/v1/reservations
+
+Request body:
+{
+  "employee_number": 1001,
+  "parking_lot_id": 1,
+  "parking_slot_id": 2,
+  "reserved_from": "2025-11-14T09:00:00",
+  "reserved_to": "2025-11-14T13:00:00"
+}
+
+Response:
+{
+  "message": "Reservation successful",
+  "reservation_id": 12,
+  "status": "active",
+  "reserved_from": "2025-11-14T09:00:00",
+  "reserved_to": "2025-11-14T13:00:00",
+  "parking_lot_id": 1,
+  "parking_slot_id": 2,
+  "employee_number": 1001  
+}
+
+In case slot is not available,
+
+{
+  "error": "Slot is already reserved for the selected timeframe"
+}
+
+{
+  "error": "Slot is currently occupied and cannot be reserved"
+}
