@@ -3,9 +3,16 @@ Fetch details of a specific parking lot for a given date
 
 Request:
 
+date parameter is optional. The current date and time will be used if there no date is passed in the request
+If the date is passed then API will fetch details of a specific parking lot for the given date
+
 GET /api/v1/parking-lots/{parkingLotId}/slots?date=2025-11-13T11:30:00
 
-Request: /api/v1/parking-lots/1/slots?date=2025-11-13T11:30:00
+
+
+Request:
+/api/v1/parking-lots/1/slots
+/api/v1/parking-lots/1/slots?date=2025-11-13T11:30:00
 
 -------------------------------------------------------------------
 
@@ -14,64 +21,90 @@ Response:
 {
   "parking_lot_id": 1,
   "parking_lot_name": "mcity",
-  "capacity": 520,
-  "occupied": 387,
-  "available": 133,
-  "reserved": 2,
-  "occupancy_rate": 74.4,
-  "date": "2025-11-13T11:30:00",
-  "slots": [
-    {
-      "parking_slot_id": 1,
-      "available": false,
-      "reserved": true,
-      "occupied": false
+  "capacity": 5,
+  "occupied": 1,
+  "available": 0,
+  "reserved": 4,
+  "occupancy_rate": 20,
+  "date": "2025-11-14T11:30:00",
+  "zones": {
+    "A": {
+      "total_count": 4,
+      "available_count": 0,
+      "reserved_count": 3,
+      "occupied_count": 1,
+      "slots": [
+        {
+          "parking_slot_id": 1,
+          "zone": "A",
+          "slot_number": "A1",
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 2,
+          "zone": "A",
+          "slot_number": "A2",
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 3,
+          "zone": "A",
+          "slot_number": "A3",
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 4,
+          "zone": "A",
+          "slot_number": "A4",
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        }
+      ]
     },
-    {
-      "parking_slot_id": 2,
-      "available": false,
-      "reserved": true,
-      "occupied": false
-    },
-    {
-      "parking_slot_id": 3,
-      "available": true,
-      "reserved": false,
-      "occupied": false
-    },
-    {
-      "parking_slot_id": 4,
-      "available": false,
-      "reserved": false,
-      "occupied": true
-    },
-    {
-      "parking_slot_id": 5,
-      "available": true,
-      "reserved": false,
-      "occupied": false
+    "B": {
+      "total_count": 1,
+      "available_count": 0,
+      "reserved_count": 1,
+      "occupied_count": 0,
+      "slots": [
+        {
+          "parking_slot_id": 5,
+          "zone": "B",
+          "slot_number": "B1",
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        }
+      ]
     }
-  ],
+  },
   "predictions": [
     {
-      "timestamp": "2025-11-13T12:00:00",
-      "predicted_occupied": 392,
-      "predicted_available": 128
+      "timestamp": "2025-11-14T12:00:00",
+      "predicted_occupied": 6,
+      "predicted_available": -5
     },
     {
-      "timestamp": "2025-11-13T12:30:00",
-      "predicted_occupied": 397,
-      "predicted_available": 123
+      "timestamp": "2025-11-14T12:30:00",
+      "predicted_occupied": 11,
+      "predicted_available": -10
     },
     {
-      "timestamp": "2025-11-13T13:00:00",
-      "predicted_occupied": 402,
-      "predicted_available": 118
+      "timestamp": "2025-11-14T13:00:00",
+      "predicted_occupied": 16,
+      "predicted_available": -15
     },
     {
-      "timestamp": "2025-11-13T13:30:00",
-      "predicted_occupied": 407,
-      "predicted_available": 113
+      "timestamp": "2025-11-14T13:30:00",
+      "predicted_occupied": 21,
+      "predicted_available": -20
     }
   ]
 }
