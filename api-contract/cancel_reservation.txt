@@ -1,0 +1,39 @@
+POST 
+
+API request URL: http://localhost:8080/api/v1/reservations/cancel
+
+Body:
+{
+  "reservation_id": 13,
+  "employee_number": 1001
+}
+
+----------------------
+
+Response:
+
+Success response:
+{
+    "reservation_id": 13,
+    "status": "cancelled",
+    "message": "Reservation cancelled successfully"
+}
+
+Error 1: 
+{
+    "timestamp": "2025-11-20T15:11:35.9129098",
+    "status": 400,
+    "error": "400 BAD_REQUEST",
+    "message": "Employee number does not match reservation",
+    "path": "/api/v1/reservations/cancel"
+}
+
+
+Error 2:
+{
+    "timestamp": "2025-11-20T15:13:20.6017941",
+    "status": 400,
+    "error": "400 BAD_REQUEST",
+    "message": "Cannot cancel: current time is past or equal to reserved_from",
+    "path": "/api/v1/reservations/cancel"
+}
