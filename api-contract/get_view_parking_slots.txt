@@ -6,13 +6,13 @@ Request:
 date parameter is optional. The current date and time will be used if there no date is passed in the request
 If the date is passed then API will fetch details of a specific parking lot for the given date
 
-GET /api/v1/parking-lots/{parkingLotId}/slots?date=2025-11-13T11:30:00
+GET /api/v1/parking-lots/{parkingLotId}/slots?date=2025-11-14T11:30:00
 
 
 
 Request:
 /api/v1/parking-lots/1/slots
-/api/v1/parking-lots/1/slots?date=2025-11-13T11:30:00
+/api/v1/parking-lots/1/slots?date=2025-11-14T11:30:00
 
 -------------------------------------------------------------------
 
@@ -88,23 +88,19 @@ Response:
   "predictions": [
     {
       "timestamp": "2025-11-14T12:00:00",
-      "predicted_occupied": 6,
-      "predicted_available": -5
+      "occupancy": 25
     },
     {
       "timestamp": "2025-11-14T12:30:00",
-      "predicted_occupied": 11,
-      "predicted_available": -10
+      "occupancy": 30
     },
     {
       "timestamp": "2025-11-14T13:00:00",
-      "predicted_occupied": 16,
-      "predicted_available": -15
+      "occupancy": 35
     },
     {
       "timestamp": "2025-11-14T13:30:00",
-      "predicted_occupied": 21,
-      "predicted_available": -20
+      "occupancy": 40
     }
   ]
 }
