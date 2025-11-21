@@ -1,0 +1,72 @@
+Request GET/ http:localhost:8080/ap1/v1/overview
+
+Response
+
+Note: Summary will be used when there is no DC Data present. Cities will be needed for the drop down. dcs to have cityId and predictedFillTimeMinutes field
+
+{
+  summary: {
+    totalDcs: 3,
+    totalSlots: 720,
+    totalOccupied: 510,
+    totalAvailable: 210,
+    averageUtilisationPercent: 70.8,
+  },
+  dcs: [
+    {
+      id: 'dc1',
+      name: 'DC 1 - Mahindra City',
+      cityId: 'chennai',
+      totalSlots: 250,
+      occupiedSlots: 190,
+      availableSlots: 60,
+      utilisationPercent: 76,
+      predictedFillTimeMinutes: 45,
+    },
+    {
+      id: 'dc2',
+      name: 'DC 2 - Tidel',
+      cityId: 'chennai',
+      totalSlots: 300,
+      occupiedSlots: 220,
+      availableSlots: 80,
+      utilisationPercent: 73,
+      predictedFillTimeMinutes: 60,
+    },
+    {
+      id: 'dc3',
+      name: 'DC 3 - Siruseri',
+      cityId: 'chennai',
+      totalSlots: 170,
+      occupiedSlots: 100,
+      availableSlots: 70,
+      utilisationPercent: 59,
+      predictedFillTimeMinutes: 110,
+    },
+    {
+      id: 'dc4',
+      name: 'DC 4 - Whitefield',
+      cityId: 'bangalore',
+      totalSlots: 200,
+      occupiedSlots: 120,
+      availableSlots: 80,
+      utilisationPercent: 60,
+      predictedFillTimeMinutes: 90,
+    },
+    {
+      id: 'dc5',
+      name: 'DC 5 - Electronic City',
+      cityId: 'bangalore',
+      totalSlots: 180,
+      occupiedSlots: 90,
+      availableSlots: 90,
+      utilisationPercent: 50,
+      predictedFillTimeMinutes: 120,
+    },
+  ],
+  cities: [
+    { id: 'all', name: 'All' },
+    { id: 'chennai', name: 'Chennai' },
+    { id: 'bangalore', name: 'Bangalore' },
+  ],
+};
