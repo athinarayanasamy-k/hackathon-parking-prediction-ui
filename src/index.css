@@ -1,0 +1,214 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: block;
+  min-width: 320px;
+  background-color: #FBFAF7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Ant Design Layout fixes */
+.ant-layout {
+  display: flex;
+  flex-direction: column;
+  background: #FBFAF7;
+}
+
+.ant-layout-sider {
+  flex: 0 0 200px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  background: #F5F1EB;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.ant-layout-sider-collapsed {
+  flex: 0 0 80px;
+}
+
+.ant-layout-has-sider > .ant-layout-content {
+  margin-left: 200px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.ant-layout-sider-collapsed ~ .ant-layout-content {
+  margin-left: 80px;
+}
+
+.ant-layout-header {
+  background: #FBFAF7;
+  border-bottom: 1px solid #E6E0D6;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+  flex-shrink: 0;
+}
+
+.ant-layout-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #FBFAF7;
+  display: flex;
+  flex-direction: column;
+}
+
+.ant-layout-footer {
+  background: #F5F1EB;
+  border-top: 1px solid #E6E0D6;
+  padding: 24px;
+  text-align: center;
+  color: #6F6F6F;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+/* Ant Table Styling */
+.ant-table {
+  background: #FBFAF7;
+  font-size: 14px;
+}
+
+.ant-table-thead > tr > th {
+  background: #4A5568;
+  color: white;
+  font-weight: 600;
+  border-bottom: 2px solid #4A5568;
+}
+
+.ant-table-tbody > tr {
+  transition: background-color 0.2s;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #F9F8F6;
+}
+
+.ant-table td {
+  border-bottom: 1px solid #E6E0D6;
+  padding: 16px 12px;
+}
+
+/* Ant Card Styling */
+.ant-card {
+  background: #FBFAF7;
+  border: 1px solid #E6E0D6;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.ant-card-head {
+  background: #FBFAF7;
+  border-bottom: 1px solid #E6E0D6;
+  padding: 16px 24px;
+}
+
+.ant-card-body {
+  padding: 24px;
+}
+
+/* Ant Pagination */
+.ant-pagination {
+  margin-top: 16px;
+}
+
+.ant-pagination-item-active {
+  background-color: #C4573B;
+  border-color: #C4573B;
+}
+
+.ant-pagination-item-active a {
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .ant-layout-sider {
+    position: fixed;
+    width: 200px;
+  }
+  
+  .ant-layout-has-sider > .ant-layout-content {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ant-layout-sider {
+    width: 80px;
+  }
+  
+  .ant-layout-has-sider > .ant-layout-content {
+    margin-left: 80px;
+  }
+  
+  .ant-layout-header {
+    padding: 0 16px;
+  }
+  
+  .ant-layout-content {
+    padding: 16px;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F1EB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C2A46B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B39559;
+}

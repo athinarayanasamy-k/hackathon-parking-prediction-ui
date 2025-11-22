@@ -1,0 +1,984 @@
+Request Get/http://localhost:3001/dashboard/dc1
+
+Reponse: 
+{
+  "id": "dc1",
+  "summary": {
+    "availableSpots": 40,
+    "occupiedSpots": 34,
+    "predictedAvailableIn30Min": 36,
+    "utilisationRate": 38.6,
+    "timestamp": "03:10:12 PM",
+    "dateLabel": "Tuesday, November 18, 2025"
+  },
+  "zones": [
+    {
+      "id": "zone-a",
+      "label": "Zone A",
+      "code": "A",
+      "totalSlots": 32,
+      "availableSlots": 18,
+      "occupiedSlots": 10,
+      "reservedSlots": 4,
+      "slots": [
+        {
+          "parking_slot_id": 1,
+          "zone": "A",
+          "slot_number": "A01",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 2,
+          "zone": "A",
+          "slot_number": "A02",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 3,
+          "zone": "A",
+          "slot_number": "A03",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 4,
+          "zone": "A",
+          "slot_number": "A04",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 5,
+          "zone": "A",
+          "slot_number": "A05",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 6,
+          "zone": "A",
+          "slot_number": "A06",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 7,
+          "zone": "A",
+          "slot_number": "A07",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 8,
+          "zone": "A",
+          "slot_number": "A08",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 9,
+          "zone": "A",
+          "slot_number": "A09",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 10,
+          "zone": "A",
+          "slot_number": "A10",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 11,
+          "zone": "A",
+          "slot_number": "A11",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 12,
+          "zone": "A",
+          "slot_number": "A12",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 13,
+          "zone": "A",
+          "slot_number": "A13",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 14,
+          "zone": "A",
+          "slot_number": "A14",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 15,
+          "zone": "A",
+          "slot_number": "A15",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 16,
+          "zone": "A",
+          "slot_number": "A16",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 17,
+          "zone": "A",
+          "slot_number": "A17",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 18,
+          "zone": "A",
+          "slot_number": "A18",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 19,
+          "zone": "A",
+          "slot_number": "A19",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 20,
+          "zone": "A",
+          "slot_number": "A20",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 21,
+          "zone": "A",
+          "slot_number": "A21",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 22,
+          "zone": "A",
+          "slot_number": "A22",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 23,
+          "zone": "A",
+          "slot_number": "A23",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 24,
+          "zone": "A",
+          "slot_number": "A24",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 25,
+          "zone": "A",
+          "slot_number": "A25",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 26,
+          "zone": "A",
+          "slot_number": "A26",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 27,
+          "zone": "A",
+          "slot_number": "A27",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 28,
+          "zone": "A",
+          "slot_number": "A28",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 29,
+          "zone": "A",
+          "slot_number": "A29",
+          "reservation_id": 1029,
+          "employee_number": 1029,
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 30,
+          "zone": "A",
+          "slot_number": "A30",
+          "reservation_id": 1030,
+          "employee_number": 1030,
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 31,
+          "zone": "A",
+          "slot_number": "A31",
+          "reservation_id": 1031,
+          "employee_number": 1031,
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 32,
+          "zone": "A",
+          "slot_number": "A32",
+          "reservation_id": 1032,
+          "employee_number": 1032,
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        }
+      ]
+    },
+    {
+      "id": "zone-b",
+      "label": "Zone B",
+      "code": "B",
+      "totalSlots": 32,
+      "availableSlots": 12,
+      "occupiedSlots": 15,
+      "reservedSlots": 5,
+      "slots": [
+        {
+          "parking_slot_id": 1,
+          "zone": "B",
+          "slot_number": "B01",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 2,
+          "zone": "B",
+          "slot_number": "B02",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 3,
+          "zone": "B",
+          "slot_number": "B03",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 4,
+          "zone": "B",
+          "slot_number": "B04",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 5,
+          "zone": "B",
+          "slot_number": "B05",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 6,
+          "zone": "B",
+          "slot_number": "B06",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 7,
+          "zone": "B",
+          "slot_number": "B07",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 8,
+          "zone": "B",
+          "slot_number": "B08",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 9,
+          "zone": "B",
+          "slot_number": "B09",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 10,
+          "zone": "B",
+          "slot_number": "B10",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 11,
+          "zone": "B",
+          "slot_number": "B11",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 12,
+          "zone": "B",
+          "slot_number": "B12",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 13,
+          "zone": "B",
+          "slot_number": "B13",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 14,
+          "zone": "B",
+          "slot_number": "B14",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 15,
+          "zone": "B",
+          "slot_number": "B15",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 16,
+          "zone": "B",
+          "slot_number": "B16",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 17,
+          "zone": "B",
+          "slot_number": "B17",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 18,
+          "zone": "B",
+          "slot_number": "B18",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 19,
+          "zone": "B",
+          "slot_number": "B19",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 20,
+          "zone": "B",
+          "slot_number": "B20",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 21,
+          "zone": "B",
+          "slot_number": "B21",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 22,
+          "zone": "B",
+          "slot_number": "B22",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 23,
+          "zone": "B",
+          "slot_number": "B23",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 24,
+          "zone": "B",
+          "slot_number": "B24",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 25,
+          "zone": "B",
+          "slot_number": "B25",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 26,
+          "zone": "B",
+          "slot_number": "B26",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 27,
+          "zone": "B",
+          "slot_number": "B27",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 28,
+          "zone": "B",
+          "slot_number": "B28",
+          "reservation_id": 1028,
+          "employee_number": 1028,
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 29,
+          "zone": "B",
+          "slot_number": "B29",
+          "reservation_id": 1029,
+          "employee_number": 1029,
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 30,
+          "zone": "B",
+          "slot_number": "B30",
+          "reservation_id": 1030,
+          "employee_number": 1030,
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 31,
+          "zone": "B",
+          "slot_number": "B31",
+          "reservation_id": 1031,
+          "employee_number": 1031,
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 32,
+          "zone": "B",
+          "slot_number": "B32",
+          "reservation_id": 1032,
+          "employee_number": 1032,
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        }
+      ]
+    },
+    {
+      "id": "zone-c",
+      "label": "Zone C",
+      "code": "C",
+      "totalSlots": 24,
+      "availableSlots": 10,
+      "occupiedSlots": 9,
+      "reservedSlots": 5,
+      "slots": [
+        {
+          "parking_slot_id": 1,
+          "zone": "C",
+          "slot_number": "C01",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 2,
+          "zone": "C",
+          "slot_number": "C02",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 3,
+          "zone": "C",
+          "slot_number": "C03",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 4,
+          "zone": "C",
+          "slot_number": "C04",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 5,
+          "zone": "C",
+          "slot_number": "C05",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 6,
+          "zone": "C",
+          "slot_number": "C06",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 7,
+          "zone": "C",
+          "slot_number": "C07",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 8,
+          "zone": "C",
+          "slot_number": "C08",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 9,
+          "zone": "C",
+          "slot_number": "C09",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 10,
+          "zone": "C",
+          "slot_number": "C10",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": true,
+          "reserved": false,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 11,
+          "zone": "C",
+          "slot_number": "C11",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 12,
+          "zone": "C",
+          "slot_number": "C12",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 13,
+          "zone": "C",
+          "slot_number": "C13",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 14,
+          "zone": "C",
+          "slot_number": "C14",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 15,
+          "zone": "C",
+          "slot_number": "C15",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 16,
+          "zone": "C",
+          "slot_number": "C16",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 17,
+          "zone": "C",
+          "slot_number": "C17",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 18,
+          "zone": "C",
+          "slot_number": "C18",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 19,
+          "zone": "C",
+          "slot_number": "C19",
+          "reservation_id": null,
+          "employee_number": null,
+          "available": false,
+          "reserved": false,
+          "occupied": true
+        },
+        {
+          "parking_slot_id": 20,
+          "zone": "C",
+          "slot_number": "C20",
+          "reservation_id": 1020,
+          "employee_number": 1020,
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 21,
+          "zone": "C",
+          "slot_number": "C21",
+          "reservation_id": 1021,
+          "employee_number": 1021,
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 22,
+          "zone": "C",
+          "slot_number": "C22",
+          "reservation_id": 1022,
+          "employee_number": 1022,
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 23,
+          "zone": "C",
+          "slot_number": "C23",
+          "reservation_id": 1023,
+          "employee_number": 1023,
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        },
+        {
+          "parking_slot_id": 24,
+          "zone": "C",
+          "slot_number": "C24",
+          "reservation_id": 1024,
+          "employee_number": 1024,
+          "available": false,
+          "reserved": true,
+          "occupied": false
+        }
+      ]
+    }
+  ],
+  "predictions": [
+    {
+      "time": "15:00",
+      "occupied": 34,
+      "available": 40,
+      "occupancyPercent": 45.9
+    },
+    {
+      "time": "15:30",
+      "occupied": 38,
+      "available": 36,
+      "occupancyPercent": 51.4
+    },
+    {
+      "time": "16:00",
+      "occupied": 42,
+      "available": 32,
+      "occupancyPercent": 56.8
+    },
+    {
+      "time": "16:30",
+      "occupied": 40,
+      "available": 34,
+      "occupancyPercent": 54.1
+    },
+    {
+      "time": "17:00",
+      "occupied": 36,
+      "available": 38,
+      "occupancyPercent": 48.6
+    }
+  ],
+  "alerts": [
+    {
+      "id": "dc1-alert-1",
+      "title": "Zone B nearing capacity",
+      "message": "6 reserved slots left in Zone B",
+      "severity": "warning",
+      "timeAgo": "3 mins ago"
+    },
+    {
+      "id": "dc1-alert-2",
+      "title": "Sensor recalibration",
+      "message": "Routine check scheduled for C3",
+      "severity": "info",
+      "timeAgo": "12 mins ago"
+    },
+    {
+      "id": "dc1-alert-3",
+      "title": "Smooth operations",
+      "message": "No incidents reported",
+      "severity": "success",
+      "timeAgo": "20 mins ago"
+    }
+  ]
+}

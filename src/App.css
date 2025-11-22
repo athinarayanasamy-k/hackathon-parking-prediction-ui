@@ -1,0 +1,150 @@
+/* Utility class for parking grid - 18 columns */
+.grid-cols-18 {
+  display: grid;
+  grid-template-columns: repeat(18, minmax(0, 1fr));
+  gap: 8px;
+}
+
+@media (max-width: 1200px) {
+  .grid-cols-18 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-cols-18 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-cols-18 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+/* Main container */
+.ant-layout {
+  background: #FBFAF7;
+}
+
+.ant-layout-sider {
+  background: #F5F1EB !important;
+}
+
+/* Content area styling */
+.page-content {
+  padding: 24px;
+  background: #FBFAF7;
+}
+
+/* Typography overrides */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  color: #232323;
+}
+
+p {
+  color: #6F6F6F;
+  margin-bottom: 8px;
+}
+
+/* Card styling */
+.ant-card {
+  border-radius: 8px;
+  border: 1px solid #E6E0D6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Stat card styling */
+.stat-card {
+  background: #FBFAF7;
+  border: 1px solid #E6E0D6;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Table styling */
+.ant-table {
+  background: #FBFAF7;
+}
+
+.ant-table-thead > tr > th {
+  background: #4A5568;
+  color: white;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #F9F8F6;
+}
+
+/* Button styling */
+.ant-btn {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.ant-btn-primary {
+  background-color: #C4573B;
+  border-color: #C4573B;
+}
+
+.ant-btn-primary:hover {
+  background-color: #B34730;
+  border-color: #B34730;
+}
+
+/* Input styling */
+.ant-input,
+.ant-select-selector,
+.ant-picker {
+  border-radius: 6px;
+  border-color: #E6E0D6;
+}
+
+.ant-input:focus,
+.ant-select-focused .ant-select-selector {
+  border-color: #C4573B;
+  box-shadow: 0 0 0 2px rgba(196, 87, 59, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-content {
+    padding: 16px;
+  }
+  
+  .ant-layout-content {
+    padding: 16px !important;
+  }
+}
+
+/* Utility classes */
+.space-y-4 > * + * {
+  margin-top: 16px;
+}
+
+.space-y-6 > * + * {
+  margin-top: 24px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar-track {
+  background: #F5F1EB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C2A46B;
+}
